@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-drone-core = { version = "0.1.0", path = "../drone-core" }
+drone-core = { version = "0.1.0", path = "../core" }

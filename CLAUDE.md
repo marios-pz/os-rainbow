@@ -31,9 +31,10 @@ project-rainbow/
 │   ├── video/      # framing a frame into packets and reassembling it, newest-frame-wins
 │   └── radio/      # the direct link, sending/receiving datagrams
 ├── gadgets/
-│   ├── drone-core/    # drone logic, no board: steering mix, failsafe, jump, sequence handling
-│   ├── recon-drone/   # first gadget, the ground drone (see its own PLAN.md)
-│   ├── yokai-drone/   # placeholder, flying drone, not started
+│   ├── drones/        # the drone family, grouped so they can share one logic crate
+│   │   ├── core/      # crate `drone-core`: shared logic for every drone, no board: steering mix, failsafe, jump, sequence handling
+│   │   ├── recon/     # crate `recon-drone`: first gadget, the ground drone (see its own PLAN.md)
+│   │   └── yokai/     # crate `yokai-drone`: placeholder, flying drone, not started
 │   └── mute-jammer/   # placeholder, cooperative jammer, not started
 └── app/            # mobile app
 ```

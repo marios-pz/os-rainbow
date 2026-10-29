@@ -4,9 +4,9 @@ members = [
     "platform/protocol",
     "platform/video",
     "platform/radio",
-    "gadgets/drone-core",
-    "gadgets/recon-drone",
-    "gadgets/yokai-drone",
+    "gadgets/drones/core",
+    "gadgets/drones/recon",
+    "gadgets/drones/yokai",
     "gadgets/mute-jammer",
     "app",
 ]

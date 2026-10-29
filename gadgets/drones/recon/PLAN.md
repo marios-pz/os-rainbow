@@ -36,7 +36,7 @@ Three layers, from shared to specific:
 
 ## Data flow
 
-- Control, phone to drone: small fixed-size datagrams at a steady rate. A guard byte rejects stray packets, a sequence number orders them, the payload carries the per-side drive intent and a flags byte for actions like jump.
+- Control, phone to drone: small fixed-size datagrams at a steady rate. A guard byte rejects stray packets, a sequence number orders them, the payload carries a single drive-plus-steer intent (mixed into per-side values on the drone by the steering mix) and a flags byte for actions like jump.
 - Video, drone to phone: each frame is compressed, split into chunks that fit a single datagram, and sent to whoever last sent a valid control packet. The receiver reassembles the newest frame and discards anything older or incomplete.
 - Two video profiles: a driving profile tuned for lowest latency, and a parked observation profile tuned for clarity, chosen by a command from the app.
 

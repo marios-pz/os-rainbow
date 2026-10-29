@@ -1,4 +1,4 @@
-# Project Rainbow
+# os-rainbow
 
 An open ecosystem and firmware platform in Rust for building the gadgets of Rainbow Six Siege in real life, starting with the recon drones. Not military-grade, not a 40k budget: affordable prototypes, built to a standard that leaves room to upgrade later.
 
@@ -18,14 +18,14 @@ This is a learning project built seriously. The developer is new to Rust and to 
 
 ## Terminology (be precise)
 
-- This is a **platform / framework**, not an operating system. It is shared Rust code that each gadget's firmware depends on. Call it that.
+- The project is named **os-rainbow**, but technically the code is a **platform / framework**, not an operating system: shared Rust code that each gadget's firmware depends on. Use "platform" when describing the code itself.
 - "Rainbow Six" and operator names are Ubisoft trademarks. Fine for a personal/learning project; avoid leaning on them in any public package name.
 - A **microcontroller** runs the firmware directly, with no OS. A single-board computer runs Linux and is a different kind of target with different trade-offs.
 
 ## Repository layout
 
 ```
-project-rainbow/
+os-rainbow/
 ├── platform/
 │   ├── protocol/   # wire formats: control packet, video packet, encode/decode
 │   ├── video/      # framing a frame into packets and reassembling it, newest-frame-wins

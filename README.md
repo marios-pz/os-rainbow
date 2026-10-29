@@ -1,11 +1,11 @@
-# project-rainbow
+# os-rainbow
 
-R6 inspired OS for drones
+An open firmware platform in Rust for building R6-inspired gadgets, starting with drones.
 
 ## Introduction
 
 ```sh
-project-rainbow/
+os-rainbow/
 ├── platform/ # shared code base
 ├── gadgets/ # gadget per operator
 └── app/ # mobile application (TODO)
